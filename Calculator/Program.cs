@@ -25,7 +25,6 @@ namespace Calculator
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Good bye World!");
-            Console.WriteLine("How are you World?");
         }
     }
 }
