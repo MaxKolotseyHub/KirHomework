@@ -23,7 +23,56 @@ namespace Calculator
         //не забудь как-нибудь обработать условие, что на ноль делить нельзя, я проверю!
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            int i, j;
+            string action;
+
+            Console.WriteLine("Пиши любую цифэрку");
+            i = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Пиши еще цифэрку");
+            j = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Выбирай давай: + - * /");
+            action = Console.ReadLine();
+
+            Console.WriteLine("Ответ: ");
+
+            switch (action)
+            {
+
+                case "+":
+                    Console.WriteLine(i + j);
+                    break;
+
+                  case "-":
+                     Console.WriteLine(i - j);
+                     break;
+
+                case "*":
+                    Console.WriteLine(i * j);
+                    break;
+
+                case "/":
+
+                    if (j == 0)
+                    {
+
+                        Console.WriteLine(0);
+
+                    }
+                    else 
+                    {
+                        Console.WriteLine(i / j);
+                    }
+               
+                    break;
+
+
+
+            }
+
+            
             
         }
     }
